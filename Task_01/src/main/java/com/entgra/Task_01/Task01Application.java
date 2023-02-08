@@ -1,13 +1,13 @@
-package com.entgra.DeviceAPI;
+package com.entgra.Task_01;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DeviceApiApplication {
+public class Task01Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DeviceApiApplication.class, args);
+		SpringApplication.run(Task01Application.class, args);
 	}
 
 }

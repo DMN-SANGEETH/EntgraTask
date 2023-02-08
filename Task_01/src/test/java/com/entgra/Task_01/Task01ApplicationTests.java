@@ -1,10 +1,10 @@
-package com.entgra.DeviceAPI;
+package com.entgra.Task_01;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DeviceApiApplicationTests {
+class Task01ApplicationTests {
 
 	@Test
 	void contextLoads() {
