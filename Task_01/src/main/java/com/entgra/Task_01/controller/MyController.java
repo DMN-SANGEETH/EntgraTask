@@ -10,23 +10,24 @@ import org.springframework.web.bind.annotation.*;
 public class MyController {
     @Autowired
     private DeviceService deviceService;
-    @GetMapping("/getAllDevice")
+    @GetMapping("/all-evice")
     public Iterable<Device> getAllDevice(){
         return deviceService.getAllDevice();
     }
-    @GetMapping("/getDevice/{id}")
+    @GetMapping("/device/{id}")
     public Device getDevice(@PathVariable  Integer id){
         return deviceService.getDevice(id);
     }
-    @PostMapping("/addDevice")
+    @PostMapping("/device-add")
     public Device addDevice(@RequestBody Device device){
+
         return deviceService.addDevice(device);
     }
-    @PutMapping("/updateDevice")
+    @PutMapping("/device-update")
     public Device updateDevice(@RequestBody Device device){
         return deviceService.updateDevice(device);
     }
-    @DeleteMapping("/deleteDevice/{id}")
+    @DeleteMapping("/device-delete/{id}")
     public void deleteDevice(@PathVariable Integer id){
         deviceService.deleteDevice(id);
     }
